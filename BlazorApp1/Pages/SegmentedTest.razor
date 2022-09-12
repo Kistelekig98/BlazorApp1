@@ -1,0 +1,18 @@
+﻿@page "/segmented"
+
+<PageTitle>Segmented component</PageTitle>
+
+<Segmented @bind-Value="FirstProperty">
+  <SegmentedItem Value="true" Label="True" />
+  <SegmentedItem Value="false" Label="False" />
+</Segmented>
+
+<Segmented @bind-Value="SecondProperty">
+  <SegmentedItem Value="true" Label="True" />
+  <SegmentedItem Value="false" Label="False" />
+</Segmented>
+
+<Divider />
+
+<Checkbox @bind-Checked="FirstProperty" />
+<Checkbox @bind-Checked="SecondProperty" />

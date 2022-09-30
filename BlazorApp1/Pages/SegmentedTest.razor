@@ -2,17 +2,15 @@
 
 <PageTitle>Segmented component</PageTitle>
 
-<Segmented @bind-Value="FirstProperty">
+<Segmented @bind-Value="FirstProperty" Disabled>
   <SegmentedItem Value="true" Label="True" />
   <SegmentedItem Value="false" Label="False" />
 </Segmented>
 
-<Segmented @bind-Value="SecondProperty">
+<Segmented @bind-Value="SecondProperty" Disabled="Disabled">
   <SegmentedItem Value="true" Label="True" />
   <SegmentedItem Value="false" Label="False" />
 </Segmented>
 
-<Divider />
-
-<Checkbox @bind-Checked="FirstProperty" />
-<Checkbox @bind-Checked="SecondProperty" />
+<Switch @bind-Checked="Disabled">Disable second segmented control</Switch>
+Is the second segmented disabled? @Disabled

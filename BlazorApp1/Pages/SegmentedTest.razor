@@ -2,15 +2,14 @@
 
 <PageTitle>Segmented component</PageTitle>
 
-<Segmented @bind-Value="FirstProperty" Disabled>
-  <SegmentedItem Value="true" Label="True" />
-  <SegmentedItem Value="false" Label="False" />
-</Segmented>
+<Spin Spinning="Loading" Tip="Please wait...">
+  <Segmented @bind-Value="FirstProperty">
+    <SegmentedItem Value="false" Label="False" />
+    <SegmentedItem Value="true" Label="True" />
+  </Segmented>
 
-<Segmented @bind-Value="SecondProperty" Disabled="Disabled">
-  <SegmentedItem Value="true" Label="True" />
-  <SegmentedItem Value="false" Label="False" />
-</Segmented>
-
-<Switch @bind-Checked="Disabled" />
-Is the second segmented disabled? @Disabled
+  <Segmented @bind-Value="SecondProperty">
+    <SegmentedItem Value="false" Label="False" />
+    <SegmentedItem Value="true" Label="True" />
+  </Segmented>
+</Spin>

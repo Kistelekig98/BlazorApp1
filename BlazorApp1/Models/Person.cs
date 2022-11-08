@@ -2,6 +2,6 @@
 
 public class Person
 {
-  public bool IsFunny { get; set; }
-  public bool IsTall { get; set; }
+  public bool IsFunny { get; set; } = false;
+  public bool IsTall { get; set; } = false;
 }

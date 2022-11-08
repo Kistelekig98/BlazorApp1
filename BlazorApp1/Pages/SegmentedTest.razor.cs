@@ -1,16 +1,15 @@
-﻿namespace BlazorApp1.Pages;
+﻿using BlazorApp1.Models;
+
+namespace BlazorApp1.Pages;
 
 public partial class SegmentedTest
 {
-  public bool FirstProperty { get; set; }
-  public bool SecondProperty { get; set; }
+  public Person Person { get; set; } = new();
   public bool Loading { get; set; } = true;
 
-  protected override async Task OnInitializedAsync()
+  protected override void OnInitialized()
   {
-    await Task.Delay(6000);
-    FirstProperty = false;
-    SecondProperty = true;
-    Loading = false;
+    Person.IsFunny = true;
+    Person.IsTall = true;
   }
 }

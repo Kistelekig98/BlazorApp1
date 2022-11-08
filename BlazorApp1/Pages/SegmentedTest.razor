@@ -2,14 +2,15 @@
 
 <PageTitle>Segmented component</PageTitle>
 
-<Spin Spinning="Loading" Tip="Please wait...">
-  <Segmented @bind-Value="FirstProperty">
-    <SegmentedItem Value="false" Label="False" />
-    <SegmentedItem Value="true" Label="True" />
-  </Segmented>
-
-  <Segmented @bind-Value="SecondProperty">
-    <SegmentedItem Value="false" Label="False" />
-    <SegmentedItem Value="true" Label="True" />
-  </Segmented>
-</Spin>
+IsFunny:
+<Segmented @bind-Value="Person.IsFunny">
+  <SegmentedItem Value="false" Label="False" />
+  <SegmentedItem Value="true" Label="True" />
+</Segmented>
+<br />
+<br />
+IsTall:
+<Segmented @bind-Value="Person.IsTall">
+  <SegmentedItem Value="true" Label="True" />
+  <SegmentedItem Value="false" Label="False" />
+</Segmented>
